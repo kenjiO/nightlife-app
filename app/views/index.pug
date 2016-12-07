@@ -1,0 +1,39 @@
+include partials/header
+#main
+  .row
+    .col-sm-2
+    .col-sm-6
+      form(method='get')
+        .form-inline
+          label(for='location') Location
+          input#location.form-control(type='text', name='location', 
+                placeholder='City, town or zip code', value=location)
+          button.btn.btn-primary(type='submit') Submit
+
+  if results
+    .row
+      .col-sm-2
+      .col-sm-10
+        ul
+          each result in results
+            li.barLI
+              div.imageHolder
+                if result.image_url
+                  img(src=result.image_url)
+                else
+                  p Photo not available
+                  //img(src="http://lorempixel.com/100/100/nightlife")
+              div.barName 
+                p #{result.name}
+                p People going: #{result.peopleGoing}
+                if (username && !result.iAmGoing)
+                  a.btn.btn-primary.btn-success(data=result.name, href='/rsvp/'+encodeURIComponent(result.name)) I want to go
+                if (username && result.iAmGoing)
+                  a.btn.btn-primary.btn-danger(data=result.name, href='/cancel/'+encodeURIComponent(result.name)) Cancel
+br
+br
+br
+br
+br
+br
+p built using yelp api

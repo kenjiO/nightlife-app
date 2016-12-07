@@ -1,0 +1,24 @@
+YELP_CONSUMER_KEY=q54PYrla4DtEz0HXe3CXTA
+YELP_CONSUMER_SECRET=C62pVDNTpRC6MSm0DmgmDqqx9q0
+YELP_TOKEN=E2oDll0jpFlnY9DZWtkw1BkLeIDzD9XJ
+YELP_TOKEN_SECRET=kFrLy7nXLTe0rexChBZ6V4nR2sI
+
+
+GITHUB_KEY=56be63fc2a982dba70df 
+GITHUB_SECRET=a0b5164e1c2ba3b1d9e59cf59b99d20b8be2da22
+#MONGO_URI=mongodb://localhost:27017/clementinejs
+MONGO_URI=mongodb://user:12345678@ds113608.mlab.com:13608/fcc
+
+#PORT=8080
+
+#APP_URL=https://voting-app-kenjio.c9users.io/
+APP_URL=https://voting-app-4267542.herokuapp.com/
+
+# heroku local   set .env variables in heroku env
+# heroku config  show heroku env variables
+
+# heroku confit:set MODE=PROD
+# heroku config:set MONGO_URI=mongodb://user:12345678@ds113608.mlab.com:13608/fcc
+# heroku config:set APP_URL=https://voting-app-4267542.herokuapp.com/
+# heroku config:set GITHUB_KEY=61590737e9e22888b65d
+# heroku config:set GITHUB_SECRET=1ddb732cf6b19d8f487598aea23084f28903c40c
